@@ -1,0 +1,80 @@
+.services {
+  background: #fff;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.common {
+  width: 33.33333333333333%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #1461ff;
+  font-size: 16px;
+}
+.mainHeader {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #000;
+}
+.mainContent {
+  font-size: 16px;
+  color: #dfdfdf;
+}
+.commonBorder {
+  background: #1461ff;
+  height: 3px;
+  width: 100px;
+  margin: 30px auto;
+}
+
+.services__box {
+  padding: 40px;
+  background: rgb(226, 223, 223);
+  color: #1461ff;
+  margin: 20px;
+  transition: all 0.5s linear;
+  border-radius: 10px;
+  transform-style:preserve-3d;
+  transform:perspective(2000px);
+  transition:1s;
+  box-shadow:inset 100px 0 50px rgba(0,0,0,0.3);
+}
+.services__box:hover {
+  background: #ff4a57;
+  z-index:1111;
+  transform:perspective(2000px) rotate(-10deg);
+  box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
+}
+.commonIcons {
+  font-size: 40px;
+  color: #1461ff;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+.project__link a{
+  text-decoration: none;
+}
+.services__box:hover .commonIcons {
+  color: #fff;
+  transform: rotate(360deg);
+}
+.services__box:hover .services__box-p{
+  color: #fff;
+}
+.services__box:hover .services__box-header{
+  color: #fff;
+}
+.services__box-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.services__box-p {
+  font-size: 14px;
+  color: #1461ff;
+}

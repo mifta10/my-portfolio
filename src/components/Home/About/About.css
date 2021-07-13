@@ -1,0 +1,90 @@
+.about{
+  width: 100%;
+  background: #FFFFFF;
+  padding: 60px 0;
+}
+.about__img{
+  padding: 30px;
+  margin-left: 120px;
+  position: relative;
+  z-index: 1;
+}
+.about__img:before {
+  content: "";
+  width: 60%;
+  height: 98%;
+  top: 13px;
+  right: 203px;
+  position: absolute;
+  border: 10px solid #1461ff;
+  z-index: -1;
+}
+.about__img:after {
+  content: "";
+  width: 60%;
+  height: 96%;
+  top: 24px;
+  left: 0;
+  position: absolute;
+  background-image: url(../../../assets/images/dott.jpg);
+  z-index: -1;
+}
+.mainHeader1{
+  color: #1461ff;
+}
+/* .about__img img{
+  width: 300px;
+  height: 400px;
+} */
+
+.about__info{
+  color: #000;
+}
+.about__info h1{
+  color: #1461ff;
+  margin-bottom: 18px;
+}
+.about__info-p1{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.fa-linkedin{
+  font-size: 25px;
+}
+.about__info-p2{
+  font-size: 14px;
+}
+.info__contacts{
+  margin-top: 40px;
+}
+.info__contacts strong{
+  color: #1461ff;
+}
+.info__contacts p{
+  margin-top: 3px;
+}
+.info__contacts .col-6 {
+  margin: 10px 0;
+}
+
+.main_btn {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 30px;
+  text-transform: capitalize;
+  padding: 23px 40px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  background: linear-gradient(
+-45deg
+,rgba(88, 195, 255,.8) 0,rgba(0, 77, 230,.8) 40%,rgba(0, 59, 177,.8) 100%);
+  line-height: 10px;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out 0s;
+}
+.main_btn:hover{
+  background: #fff;
+  color: #1461ff;
+  box-shadow: 0px 1px 0px  gray;
+}
