@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import './About.css';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import my2 from '../../../assets/images/h5.png';
+import myresume from '../../../resume/Mifta Uddin Khan3.pdf';
 
 const About = () => {
   useEffect(() => {
@@ -70,7 +72,7 @@ const About = () => {
               </div>
             </div>
             <hr />
-            <a href="#0" className="btn btn-default main_btn d-flex justify-content-center">Download Resume</a>
+            <Link to={myresume} className="btn btn-default main_btn d-flex justify-content-center" target="_blank" rel="noopener noreferrer" download>Download Resume</Link>
           </div>
         </div>
       </div>

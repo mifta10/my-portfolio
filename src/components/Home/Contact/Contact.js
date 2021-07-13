@@ -1,9 +1,23 @@
 import React, { useEffect } from 'react';
-import './Contact.css'
+import './Contact.css';
+import emailjs from "emailjs-com";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 const Contact = () => {
+
+	function sendEmail(e) {
+		e.preventDefault();
+
+		emailjs.sendForm('service_0a3mh69', 'template_s5fokhc', e.target, 'user_RaTM1axNdPQPmcyXUjs1l')
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
+		alert('Your Message Successfully Send')
+		e.target.reset()
+	}
 
 	useEffect(() => {
 		Aos.init({ duration: 2000 })
@@ -26,7 +40,7 @@ const Contact = () => {
 
 				<div class="row">
 					<div class="col-md-7 col-sm-12">
-						<form id="contact-form" method="post" enctype="multipart/form-data">
+						<form id="contact-form" method="post" onSubmit={sendEmail} enctype="multipart/form-data">
 							<div class="row">
 								<div class="input_padding text-center">
 									<div class="form-group col-sm-12">

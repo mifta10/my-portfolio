@@ -5,6 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
+import Particles from 'react-particles-js';
 
 const Contact = () => {
 	function sendEmail(e) {
@@ -28,6 +29,28 @@ const Contact = () => {
 		<div>
 			<section id="contact" class="section_padding">
 				<Navbar></Navbar>
+				<Particles
+    params={{
+	    "particles": {
+	        "number": {
+	            "value": 50
+	        },
+          "color": {
+            "value": "#0000ff"
+          },
+	        "size": {
+	            "value": 3
+	        }
+	    },
+	    "interactivity": {
+	        "events": {
+	            "onhover": {
+	                "enable": true,
+	                "mode": "repulse"
+	            }
+	        }
+	    }
+	}} />
 				<div class="container" data-aos="zoom-in">
 					<div class="col-md-12 col-sm-12-col-xs-12">
 						<div class="section_heading text-center">
