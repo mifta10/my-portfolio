@@ -7,7 +7,7 @@ import { FaFacebookF, FaTwitter, FaPinterest, FaInstagram, FaLinkedinIn, FaGithu
 
 export default function Banner() {
   const [state] = useState({
-    text: "I'm a Web Developer with extensive experience for over one year. My expertise is to create and Websites design, graphic design, business card and many more...",
+    text: "I'm a Web Developer with extensive experience for over one year. My expertise is to create and design websites, writing contents and many more...",
   })
   return (
     <section className="header main_banner banner_bg cd-intro" style={{ backgroundAttachment: "fixed" }}>
