@@ -14,8 +14,8 @@ const About = () => {
   const [state] = useState({ subHeader: 'About Me', text: 'There are some information given below about me.What I am basically' })
   return (
     <div className="about" id="about">
-      <div className="container" data-aos="zoom-in">
-        <div className="common">
+      <div className="container">
+        <div className="common" data-aos="zoom-in">
           <h1 className="mainHeader1">
             {state.subHeader}
           </h1>
@@ -23,7 +23,7 @@ const About = () => {
           </p>
           <div className="commonBorder"></div>
         </div>
-        <div className="row h-6 alignCenter">
+        <div className="row h-6 alignCenter" data-aos="fade-right">
           <div className="col-md-6">
             <div className="about__img">
               <img src={my2} alt="" />
